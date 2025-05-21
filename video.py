@@ -3,7 +3,6 @@ from moviepy.editor import *
 import requests
 from gtts import gTTS
 import os
-import speech_recognition as sr
 from pydub import AudioSegment
 import random
 from summarizer import summarizer
@@ -22,6 +21,7 @@ with open("articles.txt", "r") as f:
         title = "yaya"
         summary = ""
 
+
         if ("reddit" in line.split(" ")[0]):
             post_url = line.split(" ")[2].strip() + ".json"
             response = requests.get(post_url)
@@ -33,9 +33,9 @@ with open("articles.txt", "r") as f:
         elif ("news" in line.split(" ")[0]):
             summary = summarizer(line.split(" ")[2].strip())
             title  = line.split(" ")[1]
-            summary = summary.split("\n")[0]
-        print(summary)
+            summary = summary.split('\n')[0]
 
+        print(summary)
         tts = gTTS(text=summary, lang="en")
         save_path = os.path.join("audioClips", title)
         tts.save(save_path+".mp3")
@@ -71,15 +71,15 @@ with open("articles.txt", "r") as f:
                 list = words[i-2] + " " + words[i-1] + " " + words[i] +" "+ words[i+1] + " " + words[i+2] + " " + words[i+3]
 
             screen_width = 300
-            txt_clip = TextClip(list,
-                                color='white',  # Text color
-                                font="Arial-Bold",  # Use Arial Bold for a clean look
-                                method="label",  # Ensure the text wraps correctly
-                                size=(screen_width,75 ),  # Dynamically adjust height based on the text
-                                align='center',  # Center-align the text
-                                stroke_color='white',  # Add a stroke to make text stand out
-                                stroke_width=1,  # Make the stroke width thick enough for visibility
-                                )
+            txt_clip = TextClip(
+                list,
+                color='white',  # Text color
+                method="label",  # Ensure the text wraps correctly
+                size=(screen_width, 75),  # Dynamically adjust height based on the text
+                stroke_color='white',  # Add a stroke to make text stand out
+                stroke_width=1,  # Make the stroke width thick enough for visibility
+            )
+
 
             txt_clip = txt_clip.on_color(color=(0, 0, 0), col_opacity=0.7)  # Black background with opacity
             txt_clip = txt_clip.set_opacity(1)

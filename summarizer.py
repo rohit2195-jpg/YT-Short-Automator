@@ -15,7 +15,7 @@ def summarizer(article):
         tools_used: list[str]
 
 
-    llm = ChatGoogleGenerativeAI(model="gemini-1.5-pro")
+    llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash")
     parser = PydanticOutputParser(pydantic_object=ResearchResponse)
 
     prompt = ChatPromptTemplate.from_messages(
@@ -24,11 +24,13 @@ def summarizer(article):
                 "system",
                 """
                 Please summarize the given content and be informative about the details.
-                For reddit articles, write from the POV of the original poster. Use as much of their original language as possible.
+                Please summarize these news article and be informative about current events.
                 Make the script engaging for short from content, like a youtube short, but don't lose a proffesional tone. 
                 Your goal is reveal information little by little to get them reading to the end of the script, without them knowing it.
                 Keep the script around 45 seconds to 1 minute. 
+                Listen to the following instructions carefully
                 Do not include any additional formatting or behind the scenes material, just write plain text for the script.
+                Do not include any new lines, make it simply plain text.
                 Please respond in plain text only, no formatting, no special characters like italics or bold.
                 """,
             ),
