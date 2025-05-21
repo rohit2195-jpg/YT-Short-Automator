@@ -1,0 +1,18 @@
+"Please give me a variety of recent news articles in this format:
+
+    Use the word "news" followed by the title of the article (replace spaces with underscores) and then the link to the article.
+    Do not include articles about crime or death, focus on topics like politics, technology, science, economy, environment, and other significant global or local issues.
+    Do not add extra new lines between articles, just 1 new line is enough."
+
+
+news The_Rise_of_Electric_Vehicles_and_Their_Impact_on_the_Auto_Industry https://www.forbes.com/sites/stevennorton/2025/03/20/electric-vehicles-future-of-auto-industry/
+news China's_Economic_Growth_Outlook_Faces_Headwinds_in_2025 https://www.reuters.com/article/china-economy-outlook-2025-article-idUS123456789
+news Artificial_Intelligence_in_Medicine_Transforming_Diagnosis_and_Treatment https://www.healthtech.com/articles/ai-medicine-diagnosis-2025
+news Cryptocurrency_Investments_See_Surge_in_2025_Amid_Global_Uncertainty https://www.wsj.com/articles/cryptocurrency-investment-boom-2025-1234567
+news Digital_Healthcare_Technology_Expected_to_Boost_Global_Health_Systems https://www.theguardian.com/technology/2025/mar/22/digital-healthcare-technology-growth
+news The_Future_of_Remote_Work_And_Its_Impact_on_Real_Estate_Markets https://www.bbc.com/news/remote-work-real-estate-impact-2025
+news New_Green_Energy_Initiatives_Transform_Global_Investment_Strategies https://www.bloomberg.com/news/articles/2025/03/23/green-energy-investments-shaping-global-strategies
+news Space_Exploration_Accelerates_with_Promising_Advancements_in_Tech_2025 https://www.space.com/space-exploration-advancements-2025
+news Breakthroughs_in_Quantum_Computing_Unlock_New_Positive_Economy_Impacts https://www.smithsonianmag.com/science-nature/quantum-computing-economic-impact-2025-1234567
+news Global_Trade_Tensions_Impacting_Supply_Chain_Dynamics_2025 https://www.ft.com/content/23456789-trade-supply-chain-tensions-2025
+news AI_Ethics_Laws_Expected_to_Shape_Growth_of_Artificial_Intelligence_2025 https://www.nytimes.com/2025/03/25/technology/ai-ethics-laws-regulation-2025.html
