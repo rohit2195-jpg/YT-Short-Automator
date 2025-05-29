@@ -16,6 +16,7 @@ This project helps streamline content creation for educational, news, or infotai
 ## Testing Instructions
 
 Follow the steps below to generate your video:
+### 0. Install all libraries and dependencies
 
 ### 1. Prepare `articles.txt`
 
