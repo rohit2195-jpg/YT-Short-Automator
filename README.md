@@ -4,7 +4,7 @@
 
 **YT-Short-Automator** is a Python-based tool designed to automate the creation of engaging, educational short-form videos (30–60 seconds long) from online articles. Just provide a link to an article, and the tool will:
 
-1. Use **Gemini** (Google's generative AI) to summarize the article into a concise and compelling video script.
+1. Uses **Gemini** (Google's generative AI) to summarize the article into a concise and compelling video script.
 2. Convert the script to speech using a **Text-to-Speech (TTS)** engine.
 3. Combine the audio with a video template and generate subtitles using **MoviePy**.
 4. (Optional) Upload the finished video directly to your YouTube channel.

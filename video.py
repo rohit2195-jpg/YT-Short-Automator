@@ -8,10 +8,6 @@ import random
 from summarizer import summarizer
 
 
-
-
-
-
 with open("articles.txt", "r") as f:
     lines = f.readlines()
 
