@@ -62,3 +62,6 @@ This uses the YouTube Data API to upload your video to your linked account.
 | `Upload.py`    | Authenticates with your Google account and uploads the generated video to YouTube. |
 | `articles.txt` | Input file for listing articles to summarize and convert.                   |
 
+## License
+
+This project is licensed under the [MIT License](LICENSE).
