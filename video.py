@@ -45,7 +45,7 @@ with open("articles.txt", "r") as f:
         index = 0
         random_index = random.randint(0, len(os.listdir("templates")) -1)
         chosen_vid = ""
-        for video in os.listdir("templates/"):
+        for video in os.listdir("templates"):
             if (index == random_index):
                 chosen_vid = video
                 break

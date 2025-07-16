@@ -1,1 +1,13 @@
-wheel==0.45.1
+moviepy~=1.0.3
+requests~=2.32.3
+gTTS~=2.5.4
+pydub~=0.25.1
+google-auth-httplib2~=0.2.0
+google-auth-oauthlib~=1.2.1
+google-api-python-client~=2.165.0
+dotenv~=0.9.9
+python-dotenv~=1.0.1
+pydantic~=2.10.6
+langchain-google-genai~=2.1.0
+langchain-core~=0.3.46
+langchain~=0.3.21

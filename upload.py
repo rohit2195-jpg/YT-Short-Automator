@@ -61,6 +61,7 @@ def upload_video(youtube, media_file, title):
 
 if __name__ == "__main__":
     youtube = authenticate_youtube()
-    for file in os.listdir("./finishedVideos"):
+    path = os.path.join(".", "finishedVideos")
+    for file in os.listdir(path):
         print(file)
-        upload_video(youtube, os.path.join("./finishedVideos", file), file[0:20])
+        upload_video(youtube, os.path.join(path, file), file[0:20])
