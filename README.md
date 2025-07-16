@@ -17,7 +17,21 @@ This project helps streamline content creation for educational, news, or infotai
 
 Follow the steps below to generate your video:
 ### 0. Install all libraries and dependencies
-
+1. Clone project
+```angular2html
+git clone https://github.com/rohit2195-jpg/YT-Short-Automator
+cd YT-Short-Automator
+```
+2. Prepare Backend
+```angular2html
+python3 -m venv .venv
+source .venv/bin/activate
+.venv/bin/pip install -r requirements.txt
+```
+Start Server
+```angular2html
+.venv/bin/python backend.py
+```
 ### 1. Prepare `articles.txt`
 
 Add your article(s) in the following format (one per line):
